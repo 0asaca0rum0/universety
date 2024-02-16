@@ -1,4 +1,5 @@
 import React from "react";
+import { CiSearch } from "react-icons/ci";
 
 export default function Header  ()  {
   return (
@@ -10,7 +11,7 @@ export default function Header  ()  {
           alt="University Logo"
         />
       </div>
-      <nav className="flex gap-5 justify-between py-5 my-auto text-base font-medium whitespace-nowrap text-zinc-900 max-md:flex-wrap max-md:max-w-full">
+      <nav className="flex gap-5 justify-between items-center py-5 my-auto text-base font-medium whitespace-nowrap text-zinc-900 max-md:flex-wrap max-md:max-w-full">
         <a href="/" className="grow">
           home
         </a>
@@ -19,12 +20,8 @@ export default function Header  ()  {
         </a>
         <a href="/MI">MI</a>
         <a href="/staff">faculty and staff</a>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/db6ac937f2a3fc96214ae6c13f3639b3e5ed9cbc29433cfee8298decea57308d?apiKey=560fbc2a70834c07805a703b08db725f&"
-          className="w-5 aspect-square"
-          alt="Search Icon"
-        />
+        <CiSearch size={"25"}/>
+
       </nav>
     </header>
   );
