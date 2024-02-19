@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 export default function Header  ()  {
   return (
-    <header className="flex gap-5 justify-evenly w-full max-md:flex-row max-md:max-w-full">
+    <header className="flex gap-5 justify-evenly w-full max-md:flex-row max-md:max-w-full bg-gray-50 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
       <div className="flex flex-col justify-center items-start pr-16">
         <img
           loading="lazy"
@@ -12,14 +12,14 @@ export default function Header  ()  {
         />
       </div>
       <nav className="flex gap-5 justify-between items-center py-5 my-auto text-base font-medium whitespace-nowrap text-zinc-900 max-md:flex-wrap max-md:max-w-full">
-        <a href="/" className="grow">
+        <a href="/" className="grow text-lg">
           home
         </a>
-        <a href="/SM" className="flex-auto">
+        <a href="/SM" className="flex-auto text-lg">
          SM
         </a>
-        <a href="/MI">MI</a>
-        <a href="/staff">faculty and staff</a>
+        <a href="/MI" className="text-lg">MI</a>
+        <a href="/staff" className="text-lg">faculty and staff</a>
         <CiSearch size={"25"}/>
 
       </nav>

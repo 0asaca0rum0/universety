@@ -2,7 +2,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-
+import { ThemeProvider } from "./components/importer";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,8 +14,11 @@ export default function RootLayout({ children }) {
     <html  >
       <body className="w-full h-full  ">
         <Header />
+        <ThemeProvider>
 
         {children}
+        </ThemeProvider>
+
       <Footer/>
 
       </body>

@@ -4,7 +4,7 @@ import { IoSend } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center items-center px-16 py-10 w-full bg-neutral-900 max-md:px-5 max-md:max-w-full">
+    <footer className="flex justify-center items-center px-16 py-10 w-full bg-black max-md:px-5 max-md:max-w-full">
       <div className="w-full max-w-[1110px] max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <nav className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
@@ -52,7 +52,7 @@ export default function Footer() {
                     type="email"
                     id="email"
                     aria-label="Email"
-                    className="bg-neutral-900   focus:outline-none border-2 rounded-md border-neutral-700  "
+                    className="bg-black   focus:outline-none border-2 rounded-md border-gray-700  "
                   />
 <IoSend className="hover:text-blue-500 hover:scale-125 hover:skew-x-12 hover:-rotate-45 transition-all" />
 
