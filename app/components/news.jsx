@@ -83,7 +83,7 @@ export default async function News() {
         <div className="px-0.5 mt-14 max-md:mt-10 max-md:max-w-full">
           <div className="w-full">
             <div className="grid gap-5 md:grid-cols-3">
-              {items.map((item, index) => (
+              {items?.map((item, index) => (
                 <div key={index} className="flex flex-col">
                   <img
                     loading="lazy"
