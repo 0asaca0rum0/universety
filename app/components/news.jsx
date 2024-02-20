@@ -1,52 +1,7 @@
 import { Axios } from "../util/axios";
 import { removeHtmlTagsAndAttributes } from "../util/removehtml";
 import SwiperNews from "./swiperNews";
-
-// const items = [
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/56511e57017fd436354ec1b0300e275d40ba9a1e9afdcdb736a322f527b4895e?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/1f32cc8bcc53cc5b88d0960bfeb5b8fae32588c4a4e1627d4f46b590c3eb79f0?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/0e726a5e8db420573fcc142fcdf66e808dcad24fa56c5df6d28b7a6d996b0671?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/56511e57017fd436354ec1b0300e275d40ba9a1e9afdcdb736a322f527b4895e?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/1f32cc8bcc53cc5b88d0960bfeb5b8fae32588c4a4e1627d4f46b590c3eb79f0?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-//   {
-//     imageUrl:
-//       "https://cdn.builder.io/api/v1/image/assets/TEMP/0e726a5e8db420573fcc142fcdf66e808dcad24fa56c5df6d28b7a6d996b0671?apiKey=560fbc2a70834c07805a703b08db725f",
-//     title: "Certificate Award Ceremony for Course Graduates",
-//     description:
-//       "Today, December 3, 2020, the Academy of Digital Innovations held a certificate award ceremony",
-//   },
-// ];
-
+import Link from "next/link";
 export default async function News() {
   const items = await Axios.get("/announcement")
     .then((res) => {
@@ -54,6 +9,7 @@ export default async function News() {
       data = data
         ?.filter((e) => !e?.departement || !e?.departement?.length)
         ?.map((e) => ({
+          id: e?._id,
           imageUrl: "http://localhost:4000/" + e.thumbanil,
           title: e.title,
           description: removeHtmlTagsAndAttributes(e?.content),
@@ -84,7 +40,11 @@ export default async function News() {
           <div className="w-full">
             <div className="grid gap-5 md:grid-cols-3">
               {items.map((item, index) => (
-                <div key={index} className="flex flex-col">
+                <Link
+                  href={`/annoncement/${item?.id}`}
+                  key={index}
+                  className="flex flex-col"
+                >
                   <img
                     loading="lazy"
                     crossOrigin="anonymous"
@@ -97,7 +57,7 @@ export default async function News() {
                   <div className="mt-1.5 text-base font-medium leading-6 text-zinc-700">
                     {item.description}
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
