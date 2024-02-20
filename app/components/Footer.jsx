@@ -9,13 +9,24 @@ export default function Footer() {
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <nav className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
             <ul className="flex flex-col grow text-base font-medium text-white max-md:mt-10">
-              <li className="text-2xl">University of adrar ,faculty of SM&MI</li>
-              <li className="mt-8"><a href="/">home</a></li>
-              <li className="mt-3"><a href="/SM"> SM</a></li>
-              <li className="mt-3"><a href="/MI"> MI</a></li>
-              <li className="mt-3"><a href="/staff"> staff</a></li>
-              <li className="mt-3"><a href="/contactUs"> contact us</a></li>
-    
+              <li className="text-2xl">
+                University of adrar ,faculty of SM&MI
+              </li>
+              <li className="mt-8">
+                <a href="/">home</a>
+              </li>
+              <li className="mt-3">
+                <a href="/SM"> SM</a>
+              </li>
+              <li className="mt-3">
+                <a href="/MI"> MI</a>
+              </li>
+              <li className="mt-3">
+                <a href="/staff"> staff</a>
+              </li>
+              <li className="mt-3">
+                <a href="/contactUs"> contact us</a>
+              </li>
             </ul>
           </nav>
           <section className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
@@ -26,18 +37,12 @@ export default function Footer() {
                   href="#"
                   className=" flex gap-4 justify-between items-center mt-5 "
                 >
-<FaFacebook />
-<div className="grow my-auto">University of adrar</div>
-
+                  <FaFacebook />
+                  <div className="grow my-auto">University of adrar</div>
                 </a>
               </div>
               <div className="flex gap-4 justify-between mt-5">
-                <a
-                  href="#"
-                  className="w-7 aspect-square"
-                >
-
-                </a>
+                <a href="#" className="w-7 aspect-square"></a>
                 <div className="flex-auto my-auto"></div>
               </div>
             </div>
@@ -54,8 +59,7 @@ export default function Footer() {
                     aria-label="Email"
                     className="bg-black   focus:outline-none border-2 rounded-md border-gray-700  "
                   />
-<IoSend className="hover:text-blue-500 hover:scale-125 hover:skew-x-12 hover:-rotate-45 transition-all" />
-
+                  <IoSend className="hover:text-blue-500 hover:scale-125 hover:skew-x-12 hover:-rotate-45 transition-all" />
                 </div>
               </form>
             </div>

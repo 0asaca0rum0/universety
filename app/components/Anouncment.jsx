@@ -41,13 +41,13 @@ export default function Anouncment() {
           </button>
         )}
       >
-                <div className="w-full h-full">
+        <div className="w-full h-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/56511e57017fd436354ec1b0300e275d40ba9a1e9afdcdb736a322f527b4895e?apiKey=560fbc2a70834c07805a703b08db725f"
             className="w-full h-full aspect-[1.59] object-cover"
           />
         </div>
-                <div className="w-full h-full">
+        <div className="w-full h-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f32cc8bcc53cc5b88d0960bfeb5b8fae32588c4a4e1627d4f46b590c3eb79f0?apiKey=560fbc2a70834c07805a703b08db725f"
             className="w-full h-full aspect-[1.59] object-cover"
@@ -57,11 +57,9 @@ export default function Anouncment() {
         <div className="w-full h-full">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/66a9d2759e1dbb2aa501dca6c0a9bfadca63702c63f40b8e724e00ba6e3bc50c?apiKey=560fbc2a70834c07805a703b08db725f"
-
             className="w-full h-full aspect-[1.59] object-cover"
           />
         </div>
-
       </Carousel>
     </>
   );
