@@ -28,7 +28,7 @@ export default function Anouncment() {
             disabled={!loop && lastIndex === 0}
             className="absolute top-2/4 left-4 -translate-y-2/4 rounded-full select-none transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-w-[48px] h-12 max-h-[48px] text-white hover:bg-black/30 active:bg-black/50 grid place-items-center"
           >
-            <FaArrowLeft size={"20"} className="" />
+            <FaArrowLeft size={"0"} className="" />
           </button>
         )}
         nextArrow={({ loop, handleNext, lastIndex }) => (
@@ -37,7 +37,7 @@ export default function Anouncment() {
             disabled={!loop && lastIndex}
             className="!absolute top-2/4 right-4 -translate-y-2/4 rounded-full select-none transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-w-[48px] h-12 max-h-[48px] text-white hover:bg-black/30 active:bg-black/50 grid place-items-center"
           >
-            <FaArrowRight size={"20"} />
+            <FaArrowRight size={"0"} />
           </button>
         )}
       >

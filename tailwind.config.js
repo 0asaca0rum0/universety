@@ -10,11 +10,14 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        "hero": "url('/img/hero.jpeg')",
+        "wave": "url('/img/wave (2).svg')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors:{
+      "special":"#4B7FD3"
+    }
   },
   plugins: [],
 }
