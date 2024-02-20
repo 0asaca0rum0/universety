@@ -58,7 +58,7 @@ export default async function News() {
           title: e.title,
           description: removeHtmlTagsAndAttributes(e?.content),
         }));
-        console.log(data);
+      console.log(data);
       return data;
     })
     .catch((err) => console.error(err));
@@ -81,8 +81,25 @@ export default async function News() {
           </div>
         </div>
         <div className="px-0.5 mt-14 max-md:mt-10 max-md:max-w-full">
-          <div className="grid gap-5 md:grid-cols-3">
-            <SwiperNews items={items} />
+          <div className="w-full">
+            <div className="grid gap-5 md:grid-cols-3">
+              {items.map((item, index) => (
+                <div key={index} className="flex flex-col">
+                  <img
+                    loading="lazy"
+                    crossOrigin="anonymous"
+                    src={item.imageUrl}
+                    className="w-full aspect-[1.59] object-cover"
+                  />
+                  <div className="mt-2 text-lg font-bold text-black">
+                    {item.title}
+                  </div>
+                  <div className="mt-1.5 text-base font-medium leading-6 text-zinc-700">
+                    {item.description}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

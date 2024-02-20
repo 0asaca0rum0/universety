@@ -35,14 +35,14 @@
   margin-right: auto;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 100% !important;
-  width: 100% !important;
-}
+  height: fit-content !important;
+  width: fit-content !important;
+} */
 .swiper-wrapper {
   width: 100% !important;
-  height: 100% !important;
+  height: fit-content !important;
 }

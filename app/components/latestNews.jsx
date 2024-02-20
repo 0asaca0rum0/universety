@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 export default function LatestNews() {
   return (
     <div className="mt-12 max-md:mt-10 max-md:max-w-full">
-      <div className="flex flex-col max-md:flex-col max-md:gap-0 max-md:">
+      <div className="flex flex-col md:flex-row max-md:flex-col max-md:gap-0 max-md:">
         <div className="flex flex-col max-md:ml-0 max-md:w-full">
           <img
             loading="lazy"
