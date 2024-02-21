@@ -1,7 +1,7 @@
 "use client";
 import React, { memo } from "react";
 import Image from "next/image";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import {   MdKeyboardArrowRight} from "react-icons/md";
 import { useRouter } from "next/navigation";
 export default memo(function Menu({ onCloseMenu }) {
   const router = useRouter();
@@ -16,45 +16,46 @@ export default memo(function Menu({ onCloseMenu }) {
         alt="University Logo"
       />
       <ul className="w-full">
-        <li
+        <li 
+
           onClick={() => {
             router.push("/");
             onCloseMenu();
           }}
-          className="w-full flex items-center justify-between py-3 border-b"
+          className="w-full cursor-pointer flex items-center justify-between py-3 border-b"
         >
           <p> Home</p>
-          <MdKeyboardArrowLeft />
+          <MdKeyboardArrowRight />
         </li>
         <li
           onClick={() => {
             router.push("/SM");
             onCloseMenu();
           }}
-          className="w-full flex items-center justify-between py-3 border-b"
+          className="w-full cursor-pointer flex items-center justify-between py-3 border-b"
         >
           <p> SM</p>
-          <MdKeyboardArrowLeft />
+          <MdKeyboardArrowRight />
         </li>
         <li
           onClick={() => {
             router.push("/MI");
             onCloseMenu();
           }}
-          className="w-full flex items-center justify-between py-3 border-b"
+          className="w-full cursor-pointer flex items-center justify-between py-3 border-b"
         >
           <p> MI</p>
-          <MdKeyboardArrowLeft />
+          <MdKeyboardArrowRight />
         </li>
         <li
           onClick={() => {
             router.push("/staff");
             onCloseMenu();
           }}
-          className="w-full flex items-center justify-between py-3 border-b"
+          className="w-full cursor-pointer flex items-center justify-between py-3 border-b"
         >
           <p> faculty and staff</p>
-          <MdKeyboardArrowLeft />
+          <MdKeyboardArrowRight />
         </li>
       </ul>
     </div>

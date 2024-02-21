@@ -23,7 +23,6 @@ export default async function page() {
           years: e?.years,
           faculty: e?.faculte,
         }));
-      console.log(data);
       return data;
     })
     .catch((err) => console.error(err));

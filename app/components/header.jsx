@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Menu from "./menu";
 import { useOutside } from "@/app/hooks/useOutside";
@@ -17,7 +17,7 @@ export default function Header() {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const refSearch = useRef(null);
   const router = useRouter();
-  const searchParams = useSearchParams();
+//   const searchParams = useSearchParams();
   const menuRef = useRef(null);
   const [isOutsideMenu, setIsOutsideMenu] = useOutside(menuRef);
   useEffect(() => {
@@ -79,7 +79,7 @@ export default function Header() {
             alt="University Logo"
           />
         </button>
-        <div
+        {/* <div
           className={`flex items-center w-full justify-center md:w-fit ${
             isSearchVisible ? "" : "hidden"
           }`}
@@ -108,7 +108,7 @@ export default function Header() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex gap-3">
           <div
             className={`md:flex-row-reverse transition-all duration-500 justify-between ${
@@ -135,11 +135,11 @@ export default function Header() {
               isSearchVisible ? "hidden md:flex" : "flex"
             }`}
           >
-            <CiSearch
+            {/* <CiSearch
               onClick={handleSearch}
               className={`cursor-pointer ${isSearchVisible ? "hidden" : ""}`}
               size={30}
-            />
+            /> */}
             <button
               onClick={handleMenu}
               className="flex flex-col md:hidden  items-center gap-1 cursor-pointer"

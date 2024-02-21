@@ -14,7 +14,7 @@ export default function LatestNews() {
         </div>
         <div className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow font-medium text-black max-md:mt-10 max-md:max-w-full">
-            <div className="text-4xl font-bold max-md:max-w-full">
+            <div className="text-xl md:text-4xl font-bold max-md:max-w-full">
               Certificate Award Ceremony for Course Graduates
             </div>
             <div className="mt-5 text-lg leading-6 max-md:max-w-full">
