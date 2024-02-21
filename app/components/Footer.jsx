@@ -49,7 +49,7 @@ export default function Footer() {
               </div>
             </section>
             <section className="flex flex-col ml-5">
-              <div className="flex flex-col mt-2 text-white whitespace-nowrap max-md:mt-10">
+              <div className="flex flex-col mt-2 gap-3 text-white whitespace-nowrap max-md:mt-10">
                 <h2 className="text-2xl">Get the news first</h2>
                 <form className="flex  flex-row gap-3 justify-center items-center  ">
                   <label htmlFor="email">Email</label>
@@ -57,7 +57,7 @@ export default function Footer() {
                     type="email"
                     id="email"
                     aria-label="Email"
-                    className="bg-black   focus:outline-none border-2 rounded-md border-gray-700  "
+                    className="bg-black px-2  focus:outline-none border-2 py-2 border-gray-700  "
                   />
                   <IoSend className="hover:text-blue-500 hover:scale-125 hover:skew-x-12 hover:-rotate-45 transition-all" />
                 </form>

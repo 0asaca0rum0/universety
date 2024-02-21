@@ -35,7 +35,7 @@ export default function SwiperNews({ items }) {
               />
               <div className="text-lg font-bold text-black">{item?.title}</div>
               <div className="text-base font-medium leading-6 text-zinc-700">
-                {item?.description?.substring(0, 200)}
+                {item?.description?.substring(0, 100)}
               </div>
             </div>
           </SwiperSlide>

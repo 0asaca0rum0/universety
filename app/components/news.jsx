@@ -14,7 +14,6 @@ export default async function News() {
           title: e.title,
           description: removeHtmlTagsAndAttributes(e?.content),
         }));
-      console.log(data);
       return data;
     })
     .catch((err) => console.error(err));
@@ -25,7 +24,7 @@ export default async function News() {
           <div className="flex-auto text-4xl font-bold max-md:max-w-full">
             Latest News
           </div>
-          <div className="flex flex-col justify-center px-2.5 py-1 text-base font-medium leading-10 border-black border-solid border-[0.7px]">
+          {/* <div className="flex flex-col justify-center px-2.5 py-1 text-base font-medium leading-10 border-black border-solid border-[0.7px]">
             <div className="flex gap-5 justify-between py-px">
               <div>All News</div>
               <img
@@ -34,7 +33,7 @@ export default async function News() {
                 className="my-auto w-5 aspect-square"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="px-0.5 mt-14 max-md:mt-10 max-md:max-w-full">
           <div className="w-full">
@@ -55,7 +54,7 @@ export default async function News() {
                     {item.title}
                   </div>
                   <div className="mt-1.5 text-base font-medium leading-6 text-zinc-700">
-                    {item.description}
+                    {item.description?.substring(0, 100)}
                   </div>
                 </Link>
               ))}

@@ -22,7 +22,7 @@ export default function LatestNews() {
               certificate award ceremony for the graduates of the Frontend
               Development course.
             </div>
-            <div className="flex gap-5 justify-between self-start mt-12 text-lg leading-10 text-center whitespace-nowrap max-md:mt-10">
+            {/* <div className="flex gap-5 justify-between self-start mt-12 text-lg leading-10 text-center whitespace-nowrap max-md:mt-10">
               <button className="flex gap-2 p-1 justify-between items-center hover:scale-110 transition-all hover:border-2 border-black">
                 <IoIosArrowRoundBack size={"25"} />
                 previous
@@ -31,7 +31,7 @@ export default function LatestNews() {
                 next
                 <IoIosArrowRoundForward size={"25"} />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
